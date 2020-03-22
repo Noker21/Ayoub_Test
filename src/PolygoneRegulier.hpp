@@ -9,6 +9,7 @@ class PolygoneRegulier:public FigureGeometrique{
 	Point *_points;
 	public:
 	PolygoneRegulier(const Couleur & couleur,const Point & centre,int rayon,int nbCotes);
+	~PolygoneRegulier();
 	void afficher() const override;
 	int getNbPoints() const;
 	const Point & getPoint(int indice) const;

@@ -8,6 +8,7 @@ class FigureGeometrique{
 		Couleur _couleur;
 		public:
 		FigureGeometrique( const Couleur & couleur);
+		~FigureGeometrique();
 		const Couleur & getCouleur() const;
 		virtual void afficher()const=0;
 

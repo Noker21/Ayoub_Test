@@ -15,9 +15,12 @@ int main(){
 	std::vector<FigureGeometrique*> figure;
 	figure.push_back(new PolygoneRegulier (rouge,p0,50,5));
 	figure.push_back(new Ligne (rouge,p0,p1));
-		for(int i=0;i<2;i++){
-		figure[i]->afficher();
-		}
-
+		
+		for(FigureGeometrique *f :figure){
+			f->afficher();
+			}
+		for(FigureGeometrique *f :figure){
+		delete f;
+			}
 
 }

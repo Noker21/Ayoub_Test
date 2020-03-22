@@ -8,6 +8,7 @@ class Ligne:public FigureGeometrique {
 	Point _p0,_p1;
 		public:
 	Ligne(const Couleur & couleur, Point & p0, Point & p1);
+	~Ligne();
 	void afficher() const override;
 	const Point & getP0() const ;
 	const Point & getP1() const;

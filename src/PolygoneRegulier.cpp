@@ -14,6 +14,7 @@ PolygoneRegulier::PolygoneRegulier(const Couleur & couleur,const Point & centre,
 		_points[i]=p;
 	}
 }
+PolygoneRegulier::~PolygoneRegulier(){};
 
 void PolygoneRegulier::afficher() const{
 	std::cout<<"Polygone Regulier:   "<<_couleur._r<<"."<<_couleur._g<<"."<<_couleur._b<<"."<<" ";
